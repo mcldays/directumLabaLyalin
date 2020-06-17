@@ -13,7 +13,6 @@
         /// Gets or sets the StartDate of the Meeting. 
         /// </summary> 
         public System.DateTime StartDate { get; set; }  // Если System указан в using'ах, здесь писать полное имя не требуется. Достаточно DateTime.
-                                                        // + лучше убрать setter'ы и устанавливать значения через конструктор.
 
         /// <summary> 
         /// Gets or sets the EndDate of the Meeting. 
