@@ -3,7 +3,7 @@
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Threading;
-    using Timer = System.Threading.Timer;
+    using Timer = System.Threading.Timer; // Это зачем? Без этого всё и так работает.
 
     /// <summary>
     /// Реализация интерфейса Iremind
@@ -24,14 +24,14 @@
             this.EndDate = endDate;
             this.MeetingEvent = meetingTime;
 
-            TimerCallback tm = new TimerCallback(this.CheckTime);
-            Timer timer = new Timer(tm, null, 0, 60000);
+            TimerCallback tm = new TimerCallback(this.CheckTime); // Плохое название для переменной. Можно было бы назвать callback или handler.
+            Timer timer = new Timer(tm, null, 0, 60000);  // Лучше поместить таймер в приватное поле.
         }
 
         /// <summary>
         /// Gets or sets the DateTime of the Meeting.
         /// </summary>
-        public DateTime MeetingEvent { get; set; }
+        public DateTime MeetingEvent { get; set; }  // Либо убрать set, либо сделать проверку, что время напоминания меньше времени окончания.
 
         /// <summary>
         /// Meeting notification event
@@ -39,10 +39,10 @@
         /// <param name="obj">Empty param</param>
         public void CheckTime(object obj)
         {
-            if (this.MeetingEvent.Minute == DateTime.Now.Minute)
+            if (this.MeetingEvent.Minute == DateTime.Now.Minute)  // Неправильное условие. Нужно проверить что текущее время больше времени события.
             {
-                Console.WriteLine("Пора на встречу!");
-            }
+                Console.WriteLine("Пора на встречу!");  // Помимо напоминания в задании сказано "отключить таймер".
+      }
         }
     }
 }
