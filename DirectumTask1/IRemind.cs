@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Text;
-
-namespace DirectumTask1
+﻿namespace DirectumTask1
 {
-    interface IRemind
+    using System;
+
+    /// <summary>
+    ///   Интерфейс для считывания или установки события
+    /// </summary>
+    public interface IRemind
     {
+        /// <summary>
+        /// Gets or sets the DateTime of the Meeting.
+        /// </summary>
         DateTime MeetingEvent { get; set; }
     }
 }
