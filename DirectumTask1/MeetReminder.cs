@@ -11,6 +11,7 @@
     /// </summary>
     public class MeetReminder : Meeting, IRemind
     {
+        private Timer timer;
         /// <summary>
         /// Initializes a new instance of the <see cref="MeetReminder"/> class.
         /// </summary>
@@ -24,14 +25,14 @@
             this.EndDate = endDate;
             this.MeetingEvent = meetingTime;
 
-            TimerCallback tm = new TimerCallback(this.CheckTime); // Плохое название для переменной. Можно было бы назвать callback или handler.
-            Timer timer = new Timer(tm, null, 0, 60000);  // Лучше поместить таймер в приватное поле.
+            TimerCallback callback = new TimerCallback(this.CheckTime); // Плохое название для переменной. Можно было бы назвать callback или handler.
+            timer = new Timer(callback, null, 0, 60000);  // Лучше поместить таймер в приватное поле.
         }
 
         /// <summary>
         /// Gets or sets the DateTime of the Meeting.
         /// </summary>
-        public DateTime MeetingEvent { get; set; }  // Либо убрать set, либо сделать проверку, что время напоминания меньше времени окончания.
+        public DateTime MeetingEvent { get; }  // Либо убрать set, либо сделать проверку, что время напоминания меньше времени окончания.
 
         /// <summary>
         /// Meeting notification event
@@ -39,10 +40,11 @@
         /// <param name="obj">Empty param</param>
         public void CheckTime(object obj)
         {
-            if (this.MeetingEvent.Minute == DateTime.Now.Minute)  // Неправильное условие. Нужно проверить что текущее время больше времени события.
+            if (DateTime.Now.Minute > this.MeetingEvent.Minute)  // Неправильное условие. Нужно проверить что текущее время больше времени события.
             {
                 Console.WriteLine("Пора на встречу!");  // Помимо напоминания в задании сказано "отключить таймер".
-      }
+                timer.Dispose();
+            }
         }
     }
 }

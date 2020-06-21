@@ -10,6 +10,6 @@
         /// <summary>
         /// Gets or sets the DateTime of the Meeting.
         /// </summary>
-        DateTime MeetingEvent { get; set; }
+        DateTime MeetingEvent { get; }
     }
 }
