@@ -5,8 +5,10 @@
     /// <summary>
     /// Defines the <see cref="Ring" />.
     /// </summary>
-    internal class Ring : RoundedFigures
+    internal class Ring : RoundedFigures  // Возможно кольцо тоже может от чего-то наследоваться.
     {
+        // Не хватает свойства внутреннего радиуса кольца.
+
         /// <summary>
         /// Gets the Circumference.
         /// </summary>

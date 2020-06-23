@@ -5,12 +5,12 @@
     /// <summary>
     /// Defines the <see cref="NotRoundedFigures" />.
     /// </summary>
-    internal class NotRoundedFigures : Shape
+    internal class NotRoundedFigures : Shape  // Лучше назвать в единственном числе и сделать абстрактным.
     {
         /// <summary>
         /// Gets or sets the Area.
         /// </summary>
-        public virtual double Area { get; set; }
+        public virtual double Area { get; set; }  // Площадь может быть и у RoundedFigures. Можно сделать абстрактным и перенести в Shape.
 
         /// <summary>
         /// Gets the Perimeter
