@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Бог\\source\\repos\\DirectumTask3\\DirectumTask3\\DirectumTask3.csproj",
+      "projectUniqueName": "C:\\Users\\Бог\\Source\\Repos\\directumLabaLyalin\\DirectumTask3\\DirectumTask3\\DirectumTask3.csproj",
       "projectName": "DirectumTask3",
-      "projectPath": "C:\\Users\\Бог\\source\\repos\\DirectumTask3\\DirectumTask3\\DirectumTask3.csproj",
+      "projectPath": "C:\\Users\\Бог\\Source\\Repos\\directumLabaLyalin\\DirectumTask3\\DirectumTask3\\DirectumTask3.csproj",
       "packagesPath": "C:\\Users\\Бог\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Бог\\source\\repos\\DirectumTask3\\DirectumTask3\\obj\\",
+      "outputPath": "C:\\Users\\Бог\\Source\\Repos\\directumLabaLyalin\\DirectumTask3\\DirectumTask3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Бог\\AppData\\Roaming\\NuGet\\NuGet.Config",
