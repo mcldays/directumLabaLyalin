@@ -3,32 +3,35 @@
     using System;
 
     /// <summary>
-    /// Defines the <see cref="NotRoundedFigures" />.
+    /// Defines the <see cref="NotRoundedFigure" />.
     /// </summary>
-    internal class NotRoundedFigures : Shape  // Лучше назвать в единственном числе и сделать абстрактным.
+    internal abstract class NotRoundedFigure : Shape  // Лучше назвать в единственном числе и сделать абстрактным.
     {
         /// <summary>
-        /// Gets or sets the Area.
-        /// </summary>
-        public virtual double Area { get; set; }  // Площадь может быть и у RoundedFigures. Можно сделать абстрактным и перенести в Shape.
-
-        /// <summary>
         /// Gets the Perimeter
-        /// Gets or sets the Perimeter..
+        /// Gets or sets the Perimeter...
         /// </summary>
         public virtual double Perimeter
         {
+
             get
             {
                 double perimeter = 0;
-                for (int i = 0; i < XCoordinates.Count; i++)
+
+                for (int i = 0; i < dots.Length; i++)
                 {
-                    perimeter += Math.Sqrt(Math.Pow(this.XCoordinates[i] - this.XCoordinates[i + 1], 2) +
-                                           Math.Pow(this.YCoordinates[i] - this.YCoordinates[i + 1], 2));
+
+                    perimeter += Math.Sqrt(Math.Pow(this.dots[i].X - this.dots[i + 1].X, 2) +
+                                           Math.Pow(this.dots[i].Y - this.dots[i + 1].Y, 2));
                 }
 
                 return perimeter;
             }
         }
+
+        /// <summary>
+        /// Gets or sets the Area.
+        /// </summary>
+        public override double Area { get; set; }
     }
 }

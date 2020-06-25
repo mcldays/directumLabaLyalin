@@ -5,7 +5,7 @@
     /// <summary>
     /// Defines the <see cref="Rectangle" />.
     /// </summary>
-    internal class Rectangle : NotRoundedFigures
+    internal class Rectangle : NotRoundedFigure
     {
         /// <summary>
         /// Gets the Area.
@@ -14,10 +14,10 @@
         {
             get
             {
-                var a = Math.Sqrt(Math.Pow(this.XCoordinates[0] - this.XCoordinates[1], 2) +
-                                      Math.Pow(this.YCoordinates[0] - this.YCoordinates[1], 2));
-                var b = Math.Sqrt(Math.Pow(this.XCoordinates[2] - this.XCoordinates[3], 2) +
-                                              Math.Pow(this.YCoordinates[2] - this.YCoordinates[3], 2));
+                var a = Math.Sqrt(Math.Pow(this.dots[0].X - this.dots[1].X, 2) +
+                                      Math.Pow(this.dots[0].Y - this.dots[1].Y, 2));
+                var b = Math.Sqrt(Math.Pow(this.dots[2].X - this.dots[3].X, 2) +
+                                              Math.Pow(this.dots[2].Y - this.dots[3].Y, 2));
 
                 return a * b;
             }

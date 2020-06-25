@@ -5,7 +5,7 @@
     /// <summary>
     /// Defines the <see cref="Square" />.
     /// </summary>
-    internal class Square : NotRoundedFigures
+    internal class Square : NotRoundedFigure
     {
         /// <summary>
         /// Gets the Area.
@@ -14,8 +14,8 @@
         {
             get
             {
-                var basis = Math.Sqrt(Math.Pow(XCoordinates[0] - XCoordinates[1], 2) +
-                                      Math.Pow(YCoordinates[0] - YCoordinates[1], 2));
+                var basis = Math.Sqrt(Math.Pow(dots[0].X - dots[1].X, 2) +
+                                      Math.Pow(dots[0].Y - dots[1].Y, 2));
                 return Math.Pow(basis, 2);
             }
         }
