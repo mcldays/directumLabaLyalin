@@ -9,18 +9,16 @@
     {
         /// <summary>
         /// Gets the Perimeter
-        /// Gets or sets the Perimeter...
+        /// Gets or sets the Perimeter....
         /// </summary>
         public virtual double Perimeter
         {
-      // StyleCop.
             get
             {
                 double perimeter = 0;
 
                 for (int i = 0; i < dots.Length; i++)
                 {
-          //  StyleCop.
                     perimeter += Math.Sqrt(Math.Pow(this.dots[i].X - this.dots[i + 1].X, 2) +
                                            Math.Pow(this.dots[i].Y - this.dots[i + 1].Y, 2));
                 }

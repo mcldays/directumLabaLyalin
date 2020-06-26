@@ -1,5 +1,7 @@
 ﻿namespace DirectumTask2
 {
+    using System.Drawing;
+
     /// <summary>
     /// Defines the <see cref="Shape" />.
     /// </summary>
@@ -13,6 +15,6 @@
         /// <summary>
         /// Gets the dots.
         /// </summary>
-        public System.Drawing.Point[] dots { get; } //  StyleCop. + Пространство имён лучше вынести вверх в using.
+        public Point[] dots { get; }
     }
 }

@@ -13,10 +13,8 @@
 
         /// <summary>
         /// Gets the Circumference
-        /// Gets or sets the Circumference..
+        /// Gets or sets the Circumference...
         /// </summary>
-        public abstract double
-Circumference
-        { get; }  // StyleCop.
+        public abstract double Circumference { get; }
     }
 }

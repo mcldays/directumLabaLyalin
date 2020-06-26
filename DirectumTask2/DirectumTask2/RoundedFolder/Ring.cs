@@ -9,7 +9,7 @@
     {
         /// <summary>
         /// Gets or sets the InnerRadius
-        /// Gets the Circumference..
+        /// Gets the Circumference...
         /// </summary>
         public double InnerRadius { get; set; }
 
