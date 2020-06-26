@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;  // StyleCop. +лишние using'и.
-
-namespace DirectumTask3.Task5
+﻿namespace DirectumTask3.Task5
 {
-    class DateFormat  // StyleCop.
+    using System;
+
+    /// <summary>
+    /// Defines the <see cref="DateFormat" />.
+    /// </summary>
+    internal class DateFormat  // StyleCop.
     {
+        /// <summary>
+        /// The ExcecuteDatesFormat.
+        /// </summary>
         public void ExcecuteDatesFormat() // StyleCop.
         {
             DateTime now = DateTime.Now;

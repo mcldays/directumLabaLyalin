@@ -48,21 +48,5 @@
             /// </summary>
             AccessDenied = 64
         }
-
-        /// <summary>
-        /// The Permission.
-        /// </summary>
-        /// <param name="data">The data<see cref="AccessRights"/>.</param>
-        public static void Permission(AccessRights data)
-        {
-            if ((data & AccessRights.AccessDenied) == AccessRights.AccessDenied)
-            {
-                Console.WriteLine("Доступ запрещен");
-            }
-            else
-            {
-                Console.WriteLine("Permission:{0}", data);
-            }
-        }
     }
 }

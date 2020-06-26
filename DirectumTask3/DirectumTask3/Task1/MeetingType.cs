@@ -8,7 +8,7 @@
         /// <summary>
         /// Defines the MeetType.
         /// </summary>
-       public enum MeetType
+        public enum MeetType
         {
             /// <summary>
             /// Defines the Meeting.

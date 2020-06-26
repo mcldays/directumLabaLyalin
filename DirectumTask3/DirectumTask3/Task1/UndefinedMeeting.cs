@@ -1,6 +1,7 @@
 ﻿namespace DirectumTask3.Task1
 {
     using System;
+    using System.Globalization;
 
     /// <summary>
     /// Defines the <see cref="UndefinedMeeting" />.
@@ -25,7 +26,7 @@
         {
             get
             {
-                if (String.IsNullOrEmpty(this.EndDate.ToString()))  // StyleCop.
+                if (string.IsNullOrEmpty(this.EndDate.ToString())) 
                 {
                     return 0;
                 }

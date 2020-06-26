@@ -26,7 +26,7 @@
         {
             this.logFile = new FileStream(fileName, FileMode.Append);
             this.logWriter = new StreamWriter(this.logFile);
-            this.WriteString("Какой то лог"); // Это здесь явно лишнее.
+            this.Dispose();
         }
 
         /// <summary>
@@ -36,7 +36,6 @@
         public void WriteString(string data)
         {
             this.logWriter.WriteLine(data);
-            this.Dispose(); // Не нужно освобождать ресурсы после первой введёной строки.
         }
 
         /// <summary>
