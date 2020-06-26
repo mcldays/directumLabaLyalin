@@ -11,7 +11,7 @@
         /// Defines the AccessRights.
         /// </summary>
         [Flags, Serializable]
-        public enum AccessRights : byte
+        public enum AccessRights : byte // Лучше вынести в отдельный файл.
         {
             /// <summary>
             /// Defines the View.

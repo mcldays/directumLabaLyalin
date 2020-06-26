@@ -25,7 +25,7 @@
         {
             get
             {
-                if (String.IsNullOrEmpty(this.EndDate.ToString()))
+                if (String.IsNullOrEmpty(this.EndDate.ToString()))  // StyleCop.
                 {
                     return 0;
                 }

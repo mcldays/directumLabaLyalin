@@ -5,7 +5,7 @@
     /// <summary>
     /// Defines the <see cref="Round" />.
     /// </summary>
-    internal class Round : Circle // Круг может наследоваться от окружности.
+    internal class Round : Circle
     {
         /// <summary>
         /// Gets the Circumference.

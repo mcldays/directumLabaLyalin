@@ -16,7 +16,7 @@
         /// <returns>The <see cref="string"/>.</returns>
         public string Split(System.Data.DataSet db, char splitterRow, char splitterColumn)
         {
-            string data = string.Empty;
+            string data = string.Empty; // Лучше использовать StringBuilder.
             foreach (DataTable table in db.Tables)
             {
                 foreach (DataColumn col in table.Columns)

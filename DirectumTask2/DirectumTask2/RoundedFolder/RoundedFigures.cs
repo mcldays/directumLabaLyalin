@@ -4,7 +4,7 @@
     /// Defines the <see cref="RoundedFigures" />.
     /// </summary>
     internal abstract class
-        RoundedFigures : Shape // Лучше сделать абстрактным. И будет правильнее назвать в единственном числе(RoundedFigure).
+        RoundedFigures : Shape // Зачем вдруг тут и в некоторых других местах перенос на следующую строку?
     {
         /// <summary>
         /// Gets or sets the Radius.
@@ -17,6 +17,6 @@
         /// </summary>
         public abstract double
 Circumference
-        { get; }
+        { get; }  // StyleCop.
     }
 }
