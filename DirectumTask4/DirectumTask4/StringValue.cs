@@ -21,9 +21,22 @@
         /// </summary>
         public string Value { get; private set; }
 
-
+        /// <summary>
+        /// Override operator ==
+        /// </summary>
+        /// <param name="val1">Value one</param>
+        /// <param name="val2">Value two</param>
+        /// <returns>Compare Result</returns>
         public static bool operator ==(StringValue val1, StringValue val2) => val1.Value == val2.Value;
+
+        /// <summary>
+        /// Override operator !=
+        /// </summary>
+        /// <param name="val1">Value one</param>
+        /// <param name="val2">Value two</param>
+        /// <returns>Compare Result</returns>
         public static bool operator !=(StringValue val1, StringValue val2) => val1.Value != val2.Value;
+
         /// <summary>
         /// The Equals.
         /// </summary>
