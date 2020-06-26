@@ -3,7 +3,7 @@
     /// <summary>
     /// Defines the <see cref="Shape" />.
     /// </summary>
-    public abstract class Shape  // Лучше сделать класс абстрактным.
+    public abstract class Shape
     {
         /// <summary>
         /// Gets or sets the Area.
@@ -13,6 +13,6 @@
         /// <summary>
         /// Gets the dots.
         /// </summary>
-        public System.Drawing.Point[] dots { get; }
+        public System.Drawing.Point[] dots { get; } //  StyleCop. + Пространство имён лучше вынести вверх в using.
     }
 }

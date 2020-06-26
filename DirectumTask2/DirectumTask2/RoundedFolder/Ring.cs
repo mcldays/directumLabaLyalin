@@ -5,7 +5,7 @@
     /// <summary>
     /// Defines the <see cref="Ring" />.
     /// </summary>
-    internal class Ring : Circle  // Возможно кольцо тоже может от чего-то наследоваться.
+    internal class Ring : Circle
     {
         /// <summary>
         /// Gets or sets the InnerRadius
