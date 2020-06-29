@@ -26,7 +26,7 @@
         /// <param name="data">The data<see cref="AccessRight.AccessRights"/>.</param>
         internal static void Permission(AccessRight.AccessRights data)
         {
-            if ((data & AccessRight.AccessRights.AccessDenied) == AccessRight.AccessRights.AccessDenied)
+            if ((data & AccessRight.AccessRights.AccessDenied) == AccessRight.AccessRights.AccessDenied)  // data.HasFlag(AccessRight.AccessRights.AccessDenied);
             {
                 Console.WriteLine("Доступ запрещен");
             }

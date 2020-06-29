@@ -8,7 +8,7 @@
     public class Meeting
     {
         /// <summary>
-        /// Gets or sets the StartDate of the Meeting......
+        /// Gets or sets the StartDate of the Meeting......   // Очень много точек........
         /// </summary>
         public DateTime StartDate { get; set; }
 
@@ -21,7 +21,7 @@
         /// Gets the SummaryTime
         /// Gets or sets the SummaryTime of the Meeting......
         /// </summary>
-        public virtual int SummaryTime
+        public virtual int SummaryTime  // Должно возвращать отрезок времени (TimeSpan).
         {
             get { return this.EndDate.Minute - this.StartDate.Minute; }
         }
