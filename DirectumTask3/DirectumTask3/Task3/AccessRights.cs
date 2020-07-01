@@ -5,13 +5,13 @@
     /// <summary>
     /// Defines the <see cref="AccessRight" />.
     /// </summary>
-    internal class AccessRight
+    internal class AccessRight    // Раз из этого класса ещё и метод вынесли, то его можно убрать. В этом файле оставить только enum.
     {
         /// <summary>
         /// Defines the AccessRights.
         /// </summary>
         [Flags, Serializable]
-        public enum AccessRights : byte // Лучше вынести в отдельный файл.
+        public enum AccessRights : byte
         {
             /// <summary>
             /// Defines the View.

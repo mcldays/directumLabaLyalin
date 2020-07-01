@@ -26,7 +26,8 @@
         {
             this.logFile = new FileStream(fileName, FileMode.Append);
             this.logWriter = new StreamWriter(this.logFile);
-            this.Dispose();
+            this.Dispose(); // Это здесь лишнее. Создать инстрмент для логгирования и сразу же освободить используемые им ресурсы.
+                            // Было бы не плохо проверять это в консольке.
         }
 
         /// <summary>

@@ -17,7 +17,7 @@
         /// </summary>
         public MainWindow()
         {
-            this.InitializeComponent();
+            this.InitializeComponent();   // Не ошибка: Лучше сделать окошко побольше, либо разрешить resize.
         }
 
         /// <summary>
@@ -56,7 +56,7 @@
         /// <param name="e">The e<see cref="RoutedEventArgs"/>.</param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            UnpackStreamToTextBox(@".\q2.rtf.gz", this.TextBox);
+            UnpackStreamToTextBox(@".\q2.rtf.gz", this.TextBox);        // Лучше добавить файл архива в проект и установить в свойствах "Copy if newer", чтобы файл копировался при сборке.
         }
     }
 }
