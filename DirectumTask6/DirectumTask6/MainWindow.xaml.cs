@@ -38,9 +38,14 @@
                     document.Load(memory, DataFormats.Rtf);
                 }
             }
-            catch (Exception e)
+            catch (UnauthorizedAccessException e)
             {
-                MessageBox.Show(e.ToString());
+                throw new LoadFileException(e.Message, e);
+            }
+
+            catch (FileNotFoundException e)
+            {
+                throw new LoadFileException(e.Message, e);
             }
         }
 
