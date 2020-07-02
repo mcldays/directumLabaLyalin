@@ -12,7 +12,7 @@
         /// <summary>
         /// The FindMax.
         /// </summary>
-        /// <typeparam name="T">Generic</typeparam>
+        /// <typeparam name="T">Generic</typeparam>                         // Stylecop. Он просит написать что-то осмысленное.
         /// <param name="val1">The val1<see cref="T"/>Generic type</param>
         /// <param name="val2">The val2<see cref="T"/>Generic type</param>
         /// <param name="val3">The val3<see cref="T"/>Generic type</param>
@@ -29,7 +29,7 @@
         /// <param name="args">The args<see cref="string[]"/>.</param>
         internal static void Main(string[] args)
         {
-            ////Test FindMax value
+            ////Test FindMax value                      // Зачем 4 слеша? Игнор StyleCop'а, а он всего лишь просил добавить пробел между слешами и текстом.
             Console.WriteLine(FindMax(5, 55, 98));
 
             //// generic list
@@ -50,7 +50,7 @@
             }
 
             ////test foreach in file
-            BruteStringsFile vault = new BruteStringsFile(@".\example.txt");
+            BruteStringsFile vault = new BruteStringsFile(@".\example.txt");    // Можешь добавить файл в проект и указать в свойствах копирование в выходную директорию.
             foreach (string s in vault)
             {
                 Console.WriteLine(s);
