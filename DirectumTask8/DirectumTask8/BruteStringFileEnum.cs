@@ -39,12 +39,12 @@
         }
 
         /// <summary>
-        /// Gets the Current.
+        /// Возвращает обьект последовательности
         /// </summary>
         object IEnumerator.Current => this.Current;
 
         /// <summary>
-        /// The MoveNext.
+        /// Перемещает указатель на следующий элемент
         /// </summary>
         /// <returns>The <see cref="bool"/>.</returns>
         public bool MoveNext()
@@ -59,7 +59,7 @@
         }
 
         /// <summary>
-        /// The Reset.
+        /// Сбрасывает указатель в начальное положение
         /// </summary>
         public void Reset()
         {
