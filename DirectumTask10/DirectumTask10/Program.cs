@@ -1,12 +1,20 @@
-﻿using System;
-
-namespace DirectumTask10
+﻿namespace DirectumTask10
 {
-    class Program
+    using System.IO;
+
+    /// <summary>
+    /// Defines the <see cref="Program" />.
+    /// </summary>
+    internal class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The Main.
+        /// </summary>
+        /// <param name="args">The args<see cref="string[]"/>.</param>
+        internal static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EarlyBind.Draw(Directory.GetCurrentDirectory() + @"\EarlyTable.xlsx");
+            LazyBind.Draw(Directory.GetCurrentDirectory() + @"\LazyTable.xlsx");
         }
     }
 }
