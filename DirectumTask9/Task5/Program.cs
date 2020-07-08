@@ -1,23 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Task5
+﻿namespace Task5
 {
-    class Program
+    using System;
+    using System.IO;
+    using System.Reflection;
+
+    /// <summary>
+    /// Defines the <see cref="Program" />.
+    /// </summary>
+    internal class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The Main.
+        /// </summary>
+        /// <param name="args">The args<see cref="string[]"/>.</param>
+        internal static void Main(string[] args)
         {
             PrintProp(Path.Combine(Directory.GetCurrentDirectory(), "Task1Old.dll"), "Task1.UserModel");
             PrintProp(Path.Combine(Directory.GetCurrentDirectory(), "Task1New.dll"), "Task1.UserModel");
             Console.ReadLine();
         }
 
-
+        /// <summary>
+        /// The PrintProp.
+        /// </summary>
+        /// <param name="path">The path<see cref="string"/>.</param>
+        /// <param name="className">The className<see cref="string"/>.</param>
         public static void PrintProp(string path, string className)
         {
             var asm = Assembly.LoadFile(path);
