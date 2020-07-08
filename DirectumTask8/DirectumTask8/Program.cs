@@ -17,7 +17,7 @@
         /// <param name="val2">The val2<see cref="T"/>2 значение</param>
         /// <param name="val3">The val3<see cref="T"/>3 значение</param>
         /// <returns>The <see cref="T"/>Max value</returns>
-        public static T FindMax<T>(T val1, T val2, T val3)
+        public static T FindMax<T>(T val1, T val2, T val3) 
         {
             List<T> values = new List<T> { val1, val2, val3 };
             return values.Max();
