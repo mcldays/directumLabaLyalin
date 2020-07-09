@@ -5,7 +5,7 @@
     /// <summary>
     /// Defines the <see cref="LazyBind" />.
     /// </summary>
-    internal class LazyBind
+    internal class LazyBind   // Не ленивый. Поздний.
     {
         /// <summary>
         /// The Draw.

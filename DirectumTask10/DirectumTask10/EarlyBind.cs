@@ -23,7 +23,7 @@
             Worksheet worksheet = excel.Worksheets[1];
             worksheet.Name = "Таблица умножения";
 
-            for (int i = 2; i <= 10; i++)
+            for (int i = 2; i <= 10; i++)      // Кажется было бы более понятно, если бы i был с 1 до 10
             {
                 worksheet.Cells[i, 1] = i - 1;
                 worksheet.Cells[1, i] = i - 1;
