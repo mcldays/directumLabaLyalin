@@ -33,7 +33,7 @@
             var type = a.GetType();
             foreach (var item in type.GetProperties())
             {
-                if (item.CanRead && item.CanWrite)
+                if (item.CanRead && item.CanWrite)    // А где игнорирование Obsolete свойств?
                 {
                     dictionary.Add(item.Name, item.GetValue(a)?.ToString());
                 }

@@ -11,7 +11,7 @@
         /// <summary>
         /// The Main.
         /// </summary>
-        public static void Main()
+        public static void Main()   // Проект почему-то был библиотекой, а не консольным приложением.
         {
             var dict = GetReadingWritingProp(new UserModel { Name = "Лил", SecondName = "Чича" });
             foreach (var item in dict)
@@ -29,7 +29,7 @@
         /// <returns>The <see cref="Dictionary{string, string}"/>.</returns>
         public static Dictionary<string, string> GetReadingWritingProp(object a)
         {
-            var dict = new Dictionary<string, string>();
+            var dict = new Dictionary<string, string>();    // dictionary не такое длинное слово.
             var type = a.GetType();
             foreach (var item in type.GetProperties())
             {

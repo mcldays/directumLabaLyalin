@@ -5,8 +5,8 @@
     /// <summary>
     /// Defines the <see cref="ReadingAppConfig" />.
     /// </summary>
-    internal class ReadingAppConfig
-    {
+    internal class ReadingAppConfig       // Вообще в задании подразумевался класс с кастомными секциями, коллекциями и свойствами.
+    {                                     // Но т.к. время финального задания начинает поджимать, пускай так.
         /// <summary>
         /// The GetCommonParameterFromConfig.
         /// </summary>

@@ -13,9 +13,9 @@
         /// The Main.
         /// </summary>
         /// <param name="args">The args<see cref="string[]"/>.</param>
-        internal static void Main(string[] args)
+        internal static void Main(string[] args)    // StyleCop.
         {
-            PrintProp(Path.Combine(Directory.GetCurrentDirectory(), "Task1Old.dll"), "Task1.UserModel");
+            PrintProp(Path.Combine(Directory.GetCurrentDirectory(), "Task1Old.dll"), "Task1.UserModel");  // Нужно добавить dll'ки в проект.
             PrintProp(Path.Combine(Directory.GetCurrentDirectory(), "Task1New.dll"), "Task1.UserModel");
             Console.ReadLine();
         }

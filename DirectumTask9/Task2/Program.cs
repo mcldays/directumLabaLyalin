@@ -14,7 +14,7 @@
         /// </summary>
         public static void Main()
         {
-            var dictionary = GetPropFromAnyProj("Task1.dll", "Task1.UserModel");
+            var dictionary = GetPropFromAnyProj("Task1.dll", "Task1.UserModel");    // Лучше добавить библиотеку в проект как файл.
             Console.WriteLine("\n");
             foreach (var keyValuePair in dictionary)
             {
