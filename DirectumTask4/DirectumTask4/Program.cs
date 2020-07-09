@@ -1,7 +1,7 @@
-﻿namespace DirectumTask4
+﻿namespace DirectumTask3
 {
     using System;
-    using System.Collections;
+    using DirectumTask3.Task3;
 
     /// <summary>
     /// Defines the <see cref="Program" />.
@@ -14,15 +14,26 @@
         /// <param name="args">The args<see cref="string[]"/>.</param>
         internal static void Main(string[] args)
         {
-            Console.WriteLine(new StringValue("AAA").Equals(new StringValue("AAA")));
-            Console.WriteLine(new StringValue("AAA") == new StringValue("AAA"));
+            Permission(AccessRight.AccessRights.View | AccessRight.AccessRights.Add |
+                                   AccessRight.AccessRights.Edit
+                                   | AccessRight.AccessRights.AccessDenied);
+            Console.ReadKey();
+        }
 
-            var twoComplexes = new ArrayList()  // 11 ошибок StyleCop в этом проекте.
+        /// <summary>
+        /// The Permission.
+        /// </summary>
+        /// <param name="data">The data<see cref="AccessRight.AccessRights"/>.</param>
+        internal static void Permission(AccessRight.AccessRights data)
+        {
+            if ((data & AccessRight.AccessRights.AccessDenied) == AccessRight.AccessRights.AccessDenied)  // data.HasFlag(AccessRight.AccessRights.AccessDenied);
             {
-                new Complex(3, 5),
-                new Complex(2, 2)
-            };
-            twoComplexes.Sort();
+                Console.WriteLine("Доступ запрещен");
+            }
+            else
+            {
+                Console.WriteLine("Permission:{0}", data);
+            }
         }
     }
 }

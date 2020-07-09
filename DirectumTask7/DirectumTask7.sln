@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectumTask2", "DirectumTask2\DirectumTask2.csproj", "{982F7F4E-E16F-4EB1-A121-60F4471944E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectumTask7", "DirectumTask7\DirectumTask7.csproj", "{455D274F-FEAC-431A-8002-C3189B69B8A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{982F7F4E-E16F-4EB1-A121-60F4471944E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{982F7F4E-E16F-4EB1-A121-60F4471944E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{982F7F4E-E16F-4EB1-A121-60F4471944E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{982F7F4E-E16F-4EB1-A121-60F4471944E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455D274F-FEAC-431A-8002-C3189B69B8A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455D274F-FEAC-431A-8002-C3189B69B8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455D274F-FEAC-431A-8002-C3189B69B8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455D274F-FEAC-431A-8002-C3189B69B8A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0BFCE48F-4A5B-4B99-9571-B7059D493504}
+		SolutionGuid = {75E8378E-CFB1-46D0-BCCC-D2C67FF77D73}
 	EndGlobalSection
 EndGlobal
